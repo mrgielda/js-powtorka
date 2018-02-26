@@ -1,0 +1,65 @@
+/* na potrzeby case'a 'obsluga scroll', rozciagamy kazdy z elementow na wysokosc 100vh (zeby mozna bylo zauwazyc scroll) */
+body {
+    margin: 0;
+}
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+/*    background-color: transparent;*/
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    transition: all 0.4s;
+}
+
+#main-nav.transparentBg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    color: #fff;
+    line-height: 60px;
+    margin: 0 15px;
+}
+
+header,
+section,
+footer {
+    height: 100vh;
+}
+
+header {
+    background-color: red;
+}
+
+section {
+    background-color: green;
+}
+
+footer {
+    background-color: blue;
+}
+
+/* case z przesuwanym foto */
+#background {
+    height: 500px;
+    width: 500px;
+    background-image: url('https://www.technotification.com/wp-content/uploads/2017/06/Difference-between-a-coderprogrammer-and-developer.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+
+
+
+
